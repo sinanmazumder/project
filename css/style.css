@@ -1,0 +1,783 @@
+/*global section*/
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.container-fluid{
+    max-width: 1480px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    outline: none;
+}
+
+input,
+button:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+section {
+    position: relative;
+    overflow: visible;
+}
+
+.fixed-top {
+    position: fixed !important;
+    background: #fff;
+    padding: 0 8%;
+    box-shadow: 0px 0px 10px #0096FF;
+}
+
+/*end global section*/
+
+
+
+
+/* header area */
+
+.header {
+    border-bottom: 1px solid #ebe7e7;
+}
+.header .top-bar {
+    position: relative;
+    background-image: linear-gradient(to right, #fa01f4, #fa1112, #fae802);
+    padding: 10px 0;
+}
+.header .top-bar h6 {
+    color: #fff;
+}
+.delete-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.main-nav{
+    position: relative;
+}
+.navbar {
+    padding: 10px 0;
+}
+.navbar-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.main-nav .nav-link {
+    color: #000;
+    font-weight: 600;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.search_icon img {
+    max-width: 25px;
+    margin-left: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+.search {
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.search:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .6;
+}
+.search .box {
+    max-width: 58rem;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #000;
+    height: 95px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.search ul {
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    padding: 11px 20px;
+}
+.search ul li {
+    float: left;
+    margin: 10px;
+    font-size: 30px;
+}
+.search ul li input {
+    border: none;
+    width: auto;
+    background: transparent;
+}
+.search ul button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.search ul button img {
+    max-width: 40px;
+}
+
+/* end header area */
+
+
+
+
+/* product area */
+
+.product-area {
+    padding: 40px 0;
+}
+.product-area h2 {
+    text-transform: capitalize;
+    font-size: 27px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.product-area h2 span {
+    float: right;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.product-area .content {
+    margin: 12px 0;
+}
+.product-area .content .product-image {
+    width: 100%;
+    height: 240px;
+    background: #c4c4c4;
+    text-align: right;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.product-area .content span {
+    text-align: right;
+}
+.product-area .content h5 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+/* end product area */
+
+
+
+
+
+/* registration area */
+
+.registration_area {
+    padding: 80px 0;
+}
+.registration_area form {
+    max-width: 20rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.registration_area h5 {
+    text-align: center;
+    margin-bottom: 28px;
+    line-height: 25px;
+    font-size: 22px;
+}
+.registration_area .input_area {
+    margin: 30px 0;
+}
+.registration_area .input_area label {
+    font-weight: 500;
+}
+.registration_area .input_area input {
+    width: 100%;
+    border: 1px solid #959595;
+    height: 36px;
+    border-radius: 10px;
+}
+.registration_area button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    float: right;
+}
+
+/* end registration area */
+
+
+
+
+/* loader area */
+
+.loader {
+    margin: 30vh 0;
+}
+.loader img {
+    margin-bottom: 40px;
+}
+.loader h5 {
+    font-weight: 600;
+    font-size: 27px;
+}
+.loader p {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* end loader area */
+
+
+
+/* cart area */
+
+.cart_area {
+    padding: 50px 0;
+}
+.cart_area .content {
+    padding: 27px 20px;
+}
+.cart_area .box {
+    border: 2px solid #bad0d5;
+    margin-bottom: 50px;
+}
+.cart_area h5 {
+    background: #f8f8f8;
+    padding: 15px 20px;
+    border-bottom: 1px solid #807e7e;
+}
+.cart_area .cont {
+    padding: 20px 20px;
+}
+.cart_area .input_area {
+    margin: 20px 0;
+}
+.cart_area input {
+    width: 100%;
+    border: 1px solid #959595;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cart_area .select {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.cart_area .select span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2px;
+    width: 46px;
+    height: 96%;
+    padding: 6px 0;
+    font-size: 17px;
+    background: #fbfbfb;
+    text-align: center;
+    border-left: 1px solid gray;
+    border-radius: 0px 8px 8px 0px;
+    color: gray;
+    cursor: pointer;
+}
+.cart_area .select select {
+    width: 100%;
+    border: 1px solid #959595;
+    height: 40px;
+    border-radius: 10px;
+    padding: 8px 10px;
+    appearance: none;
+    -moz-appearance: none;
+    font-size: 14px;
+}
+.cart_area .cont p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.cart_area .cont p span {
+    float: right;
+    margin-top: 15px;
+}
+.cart_area .cont button {
+    border: none;
+    background: transparent;
+    color: blue;
+    margin-top: 12px;
+    font-size: 14px;
+    padding: 0;
+    cursor: pointer;
+}
+.cart_area .image {
+    width: 100%;
+    height: 100px;
+    background: #bdbcbc;
+}
+.cart_area .content h6 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.cart_area .content h6 a {
+    text-decoration: none;
+    color: #f00;
+}
+
+
+.box.b11 {
+    width: 78%;
+    float: right;
+    margin-top: 36px;
+}
+.b11 .cont {
+    padding-left: 35px;
+}
+.b11 ul li {
+    margin: 15px 0;
+    font-weight: 500;
+}
+.b11 h6 {
+    text-align: left !important;
+}
+.cart_area .cont p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.b11 button {
+    background: #f00 !important;
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 25px !important;
+    font-weight: 500;
+    padding: 15px 25px !important;
+    width: 100%;
+}
+
+/* end cart area */
+
+
+
+
+/* login area */
+
+.login {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+.login .content {
+    position: relative;
+    max-width: 30rem;
+    margin: 25px auto;
+    padding: 60px;
+    box-shadow: 0px 0px 10px #a09f9f;
+}
+.cross {
+    width: 26px;
+    position: absolute;
+    top: -20px;
+    right: -45px;
+    cursor: pointer;
+}
+.google-btn {
+    text-align: center;
+    position: relative;
+}
+.google-btn a {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 50px;
+    max-width: 20rem;
+    margin: 0 auto;
+    padding: 12px;
+    box-shadow: 0px 2px 10px #b3b0b0;
+    text-decoration: none;
+}
+.google-btn img {
+    width: 28px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+.google-btn span {
+    color: #a7a7a7;
+    font-weight: 500;
+}
+.login h5 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 22px;
+}
+.login .input_area {
+    margin: 28px 0;
+}
+.login .input_area input {
+    width: 100%;
+    border: 1px solid #959595;
+    height: 52px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.login .forget_pass {
+    color: #9f9e9e;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.login button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 22px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.login .check span {
+    color: gray;
+    margin-left: 12px;
+}
+.new_sign_up {
+    text-align: center;
+    display: inherit;
+    margin-top: 15px;
+    text-decoration: underline;
+    color: gray !important;
+    font-weight: 500;
+}
+
+/* end login area */
+
+
+
+
+/* product area */
+
+.product-name {
+    padding: 60px 0;
+}
+.product-name .content {
+    max-width: 25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.product-name h5 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+}
+.product-name .product_image {
+    width: 100%;
+    height: 22rem;
+    background: #c4c4c4;
+    position: relative;
+    margin: 10px 0;
+}
+.product_image span {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+    border: 2px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 27px;
+    cursor: pointer;
+}
+.product-name button {
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    width: 140px;
+    height: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.product-name .cart_btn {
+    background: #000;
+}
+.product-name .buy_now {
+    background-image: linear-gradient(to right, #fb01d3, #fe001e);
+}
+
+
+
+.more-item {
+    text-align: center;
+    padding-bottom: 60px;
+}
+.more-item h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.more-item ul {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.more-item ul li {
+    background: #c4c4c4;
+    width: 122px;
+    height: 122px;
+    margin: 8px;
+    float: left;
+}
+.more-item ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* end product area */
+
+
+
+/* stall area */
+
+.stall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.stall:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .6;
+}
+.stall .content {
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 60px;
+    box-shadow: 0px 0px 10px #d1d1d1;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.stall h3 {
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.stall h5 {
+    text-align: left;
+    font-size: 27px;
+    margin: 37px 0;
+}
+.stall h4 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.stall .buttons a {
+    background: #000;
+    width: 160px;
+    display: inline-block;
+    height: 50px;
+    padding: 12px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+.stall form {
+    margin-top: 25px;
+}
+.stall h6 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.stall input {
+    border: 1px solid gray;
+    padding: 7px;
+    width: 15rem;
+    border-radius: 12px;
+    margin-right: 15px;
+    height: 40px;
+}
+.stall button {
+    background: #000;
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* end stall area */
+
+
+
+/* my account */
+
+.my-account {
+    padding: 60px 0;
+}
+.my-account .account h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.my-account .account h4 a {
+    float: right;
+    color: #000;
+    font-size: 16px;
+    margin-top: 5px;
+    text-decoration: underline;
+    margin-right: -18%;
+}
+.my-account .account {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.verification {
+    background: #a0f7cd;
+    padding: 30px;
+    position: relative;
+    padding-left: 70px;
+}
+.verification img {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    width: 30px;
+}
+.verification h6 {
+    font-weight: 600;
+    overflow: hidden;
+}
+.verification p {
+    margin: 12px 0;
+    line-height: normal;
+}
+.verification button {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 8px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.tickets {
+    padding: 40px 0;
+}
+.my-account .account h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tickets h4{
+    position: relative;
+}
+.tickets h4 span {
+    font-size: 11px;
+    border: 2px solid #000;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    line-height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(186%);
+}
+.loading_bar {
+    position: relative;
+}
+.loading_bar .img1 {
+    max-width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    left: -10%;
+}
+.loading_bar .bar {
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.loading_bar .color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(to right, #fa01f4, #fa1112);
+    border-radius: 20px;
+}
+.loading_bar .img2 {
+    max-width: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    right: -10%;
+}
+.loading_bar h5 span {
+    float: right;
+}
+
+/* end my account */
+
